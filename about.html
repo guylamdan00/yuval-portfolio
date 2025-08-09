@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me | Yuval Cohen Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Yuval Cohen Portfolio</h1>
+        <nav>
+            <a href="index.html">Projects</a>
+            <a href="about.html" class="active">About Me</a>
+        </nav>
+    </header>
+    <main class="main-container">
+        <h2>About Me</h2>
+        <div class="about-section">
+            <img src="images/portrait.jpg" alt="Yuval Cohen portrait">
+            <div class="about-text">
+                <p>My name is Yuval Cohen and I'm an architecture student with a passion for thoughtful design that serves communities. Born and raised in Israel, I have always been fascinated by the built environment and its ability to shape the way we live and interact. My work explores the relationship between heritage and innovation, and I enjoy using existing structures as a starting point for new possibilities.</p>
+                <p>As a student at the Technion – Israel Institute of Technology, I have had the opportunity to work on a wide range of projects from adaptive‑reuse to landscape interventions. These experiences taught me that successful architecture emerges from dialogue: with the site, with its history and with the people who will inhabit it. I aim to bridge the gap between theoretical design and pragmatic solutions while prioritising social and environmental responsibility.</p>
+                <p>Beyond my studies, I collaborate with fellow students and artists on community‑driven initiatives and I am inspired by the creative energy that emerges from collaboration. When I'm not drawing or modelling, you can find me hiking the Galilee, photographing vernacular architecture or tinkering with furniture designs. I'm excited to continue learning and to contribute my skills to projects that have a positive impact.</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>Contact Me</h3>
+            <form onsubmit="alert('Thank you for your message!'); return false;">
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div style="grid-column: span 2;">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
